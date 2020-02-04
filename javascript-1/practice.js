@@ -166,7 +166,9 @@ var total = myNumbers.reduce((total, nums) => nums + total)
 //Then, use forEach to push each item's index from the myNumbers array into the newly created myNumbersIndex array. 
 
 // Code Here
-var myNumbersIndex = myNumbers.forEach((num,index) => num + index)
+let myNumbersIndex = [];
+myNumbers.forEach((item,index) => myNumbersIndex.push(index))
+
 //////////////////PROBLEM 18////////////////////
 
 // Did you know that George Foreman has five sons named George? 
@@ -198,5 +200,7 @@ var enemies = people.filter(name => name.friend === false)
 //and store that value in a variable named 'totallyAwesome'. Use .reduce().
 
 // Code Here
-var totallyAwesome = people.reduce((total,pep) =>  total += pep.awesomeLevel);
-// console.log(totallyAwesome)
+var totallyAwesome = people.reduce((total,pep) => {
+	return total + pep.awesomeLevel;
+},0) 
+console.log(totallyAwesome)

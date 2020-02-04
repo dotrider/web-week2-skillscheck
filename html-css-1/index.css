@@ -1,90 +1,96 @@
+/*mobile-first*/
+
 body {
-    width: 100%;
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
 }
 
 .top-header {
     background-color: gray;
-    height: 80px;
-    align-items: center;
-    color: whitesmoke;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-
-}
-h2 {
-    font-size: 32px;
+    height: 4em;
+    padding: 1em;
 }
 .right {
-  display: flex;
+    float: right;
+}
+.logo{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+li {
+    display: inline-block;
+    padding: .5em;
+    font-size: 0.875rem;
 }
 
 .second-header{
     background-color: black;
-    height: 300px;
-  
+    height: 250px;
+}
+.maintitle {
+    padding: 100px 0;
 }
 h1 {
     color: yellow;
     text-align: center;
-    font-size: 60px;
-    text-transform: uppercase;
+    font-size: 2.2rem;
     font-weight: 700;
-    padding-top: 100px;
-    
 }
 
 .container {
-    width: 70%;
-    align-items: center;
-    margin: 20px auto;
-
-   
-
-
+    margin: 1em;  
+    min-width: 300px;
+}
+.top , .middle , .bottom {
+    padding: 10px;
 
 }
+
 .greenbox {
+    width: 250px;
+    height: 250px;
     background-color: turquoise;
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    border-radius: 10px;   
-
-
+    border-radius: 10%;
+    margin: 0 auto;
 }
-
-.top-left {
-    margin: 20px;
-
-}
-.top-mid {
-    margin: 20px;
-}
-.top-right {
-    margin: 20px;
-}
-
 
 .orangebox {
-    background-color: orange;
-    width: 400px;
+    width: 325px;
     height: 200px;
-    display: inline-block;
+    background-color: orange;
+    margin: 0 auto;
+}
+.bottom {
+    width: 325px;
+    margin: 0 auto;
+}
+img {
+    width: 300px;
 }
 
-.parabox {
-    color: black;
-    text-align: center;
-    width: 400px;
-    justify-content: center;
-    display: inline-block;
+.bottom-left {
+    padding-bottom: 30px;
 }
-.pic {
-    width: 400px;
-}
-footer {
-    background-color: rgb(31, 46, 61);
-    height: 100px;
+
+@media (min-width: 768px){
+
+
+    .greenbox {
+        background-color: turquoise;
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        border-radius: 10px;  
+    }
+    .orangebox {
+        display: inline-block;
+        background-color: orange;
+    }
+    .top , .middle , .bottom {
+        text-align: center;
+    
+    }
+
 }
